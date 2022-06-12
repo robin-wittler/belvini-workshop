@@ -26,7 +26,7 @@ spec:
           - --host=0.0.0.0
           - --port=8000
           - "main:app"
-        image: eu.gcr.io/cw-robinw-sandbox/stateful:v0.2
+        image: europe-west1-docker.pkg.dev/cw-robinw-sandbox/belvini-repo/belvini-workshop:v0.1
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
@@ -39,7 +39,7 @@ spec:
       name: "pvc-stateful-demo"
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "stateful-demo"
+      #storageClassName: "stateful-demo"
       resources:
         requests:
           storage: 1Gi
