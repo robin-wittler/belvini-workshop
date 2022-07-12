@@ -26,7 +26,7 @@ spec:
           - --host=0.0.0.0
           - --port=8000
           - "main:app"
-        image: europe-west1-docker.pkg.dev/cw-robinw-sandbox/belvini-repo/belvini-workshop:v0.1
+        image: $REMOTE_TAG
         imagePullPolicy: Always
         ports:
         - containerPort: 8000

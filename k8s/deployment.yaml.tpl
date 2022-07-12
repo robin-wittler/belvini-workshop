@@ -17,7 +17,7 @@ spec:
         runAsGroup: 65532
       containers:
         - name: stateful-demo
-          image: europe-west1-docker.pkg.dev/cw-robinw-sandbox/belvini-repo/belvini-workshop:v0.1
+          image: $REMOTE_TAG
           command:
             - "/venv/bin/uvicorn"
             - --host=0.0.0.0
