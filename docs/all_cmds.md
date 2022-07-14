@@ -122,9 +122,9 @@ kubectl apply -f ./k8s/stateful_set.yaml
 ###Page 26
 
 ```bash
-kubectl scale deployment stateful-demo –replicas=5
-kubectl scale deployment stateful-demo –replicas=0
-kubectl scale deployment stateful-demo –replicas=1
+kubectl scale statefulset stateful-demo –replicas=5
+kubectl scale statefulset stateful-demo –replicas=0
+kubectl scale statefulset stateful-demo –replicas=1
 ```
 
 
